@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        GH_REGISTRY = "ghcr.io/your-github-username"
+        GH_REGISTRY = "ghcr.io/democloudarun"
     }
     stages {
         stage('Push to GHCR') {
