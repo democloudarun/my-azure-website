@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Deploy Infrastructure') {
             steps {
-                withCredentials([azureServicePrincipal('AZURE_Client_ID')]) {
+                withCredentials([azureServicePrincipal('AZURE_Auth_ID')]) {
             sh '''
                 export ARM_CLIENT_ID=$AZURE_CLIENT_ID
                 export ARM_CLIENT_SECRET=$AZURE_CLIENT_SECRET
